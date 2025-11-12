@@ -1,6 +1,6 @@
 # IoT Gateway - Spring Boot
 
-Projeto exemplo: backend em **Spring Boot** que atua como gateway IoT.
+Backend em **Spring Boot** que atua como gateway IoT.
 Recebe mensagens MQTT de sensores (ESP32), persiste em MongoDB e expõe APIs REST.
 
 ## Recursos
