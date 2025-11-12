@@ -1,5 +1,18 @@
 version: "3.8"
 services:
+  app:
+    build: .
+    image: iot-gateway:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+      - mosquitto
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongo
+      SPRING_DATA_MONGODB_PORT: 27017
+      MQTT_BROKER: tcp://mosquitto:1883
+
   mongo:
     image: mongo:6
     restart: unless-stopped
