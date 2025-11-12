@@ -39,6 +39,5 @@ mvn test
 ```
 
 ## Arquivos úteis
-- `LINKEDIN_POST.txt` - texto sugerido para LinkedIn.
 - `logo.svg` - logo simples (gear + IoT).
 - `architecture.svg` - diagrama arquitetural.
